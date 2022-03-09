@@ -13,18 +13,7 @@
 </head>
 <body>
     <script>
-const proto = {
-    protoProp: 'protoProp'
-};
 
-const obj = {
-    __proto__: proto,
-    objProp: 'objProp'
-};
-
-console.log('protoProp' in obj);
-console.log(Object.hasOwn(obj, 'objProp'));
-console.log(Object.hasOwn(obj, 'protoProp'))
     </script>
 </body>
 </html>

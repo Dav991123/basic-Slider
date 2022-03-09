@@ -1,14 +1,10 @@
 
 
 
+console.log(variableWithVar); //undefined
 
-const array = ['red', 'blue', 'black', 'indigo'];
-const lastValue = array[array.length - 1];
-console.log(lastValue); //indigo
+const variableWithVar = 10;
 
+console.log(variableWithVar); //Cannot access 'variableWithVar' before initialization
 
-
-
-
-// const lastValue = array.at(-1);
-// console.log(lastValue); //indigo
+let variableWithLet = 20;
