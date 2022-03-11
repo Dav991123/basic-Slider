@@ -1,10 +1,12 @@
 
 
 
-console.log(variableWithVar); //undefined
+var x = 10;
 
-const variableWithVar = 10;
+function timesTen(a) {
+    return a * 10;
+}
 
-console.log(variableWithVar); //Cannot access 'variableWithVar' before initialization
+var y = timesTen(x);
 
-let variableWithLet = 20;
+console.log(y);
