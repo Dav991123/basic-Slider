@@ -14,15 +14,24 @@
 <body>
     <script>
 
-var x = 10;
+    const proto = {
+        protoProp: 'protoProp',
+    }
 
-function timesTen(a) {
-    return a * 10;
-}
+    // Object.defineProperty(Object.prototype, 'hasOwnProperty', {
+    //     enumerable: true,
+    // });
 
-var y = timesTen(x);
+    const obj = {
+        __proto__: proto,
+        objProp: 'objProp'
+    }
 
-console.log(y);
+    for (let key in obj) {
+        console.log(key);
+    }
+
+
     </script>
 </body>
 </html>
